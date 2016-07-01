@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>直播活动通知单</title>
+<meta
+	content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'
+	name='viewport'>
+<style type="text/css">   
+
+#mytable {   
+width:90%;
+padding: 0;   
+margin: 0;   
+border:solid 1px #add9c0;
+}   
+ 
+td {   
+border-right: 1px solid #C1DAD7;   
+border-bottom: 1px solid #C1DAD7;   
+background: #fff;   
+font-size:15px;   
+padding: 6px 6px 6px 6px;   
+color: #4f6b72;   
+}   
+ 
+html>body td{ font-size:14px;}   
+body,td,th {   
+font-family: 宋体, Arial;   
+font-size: 16px;   
+}   
+</style>
+</head>
+<body class="skin-blue sidebar-mini ">
+	<section class="content-header">
+		<h1>直播活动通知单</h1>
+	</section>
+	<section class="content">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="box box-danger">
+					<div class="box-body">
+						<table id="mytable"  class="table table-bordered">
+							<tr>
+								<td colspan="3" align='center'><h2>{0}</h2></td>
+							</tr>
+							<tr>
+								<td style="width: 200pt">状态:</td>
+								<td colspan="3"><span class="class label-danger">{1}</span></td>
+							</tr>
+							<tr>
+								<td style="width: 200pt">直播发起人:</td>
+								<td colspan="3">{2}</td>
+							</tr>
+							<!-- <tr>
+								<td>联系方式:</td>
+								<td colspan="3">%s</td>
+							</tr> -->
+							<tr>
+								<td>直播开始时间</td>
+								<td colspan="3">{3}</td>
+							</tr>
+							<tr>
+								<td>直播结束时间</td>
+								<td colspan="3">{4}</td>
+							</tr>
+							<tr>
+								<td>直播地点</td>
+								<td colspan="3">{5}</td>
+							</tr>
+							<tr>
+								<td>现场联系人</td>
+								<td colspan="3">{6}</td>
+							</tr>
+							<tr>
+								<td rowspan="3">播出平台及通道</td>
+								<td style="width: 82pt">自主平台：</td>
+								<td colspan="3">{7}</td>
+							</tr>
+
+							<tr>
+								<td>并发用户数</td>
+								<td colspan="3">{8}</td>
+							</tr>
+							<tr>
+								<td>画面LOGO</td>
+								<td colspan="3">{9}</td>
+							</tr>
+							<tr>
+								<td colspan="3">备注：此邮件为系统自动发出，请勿回复。</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

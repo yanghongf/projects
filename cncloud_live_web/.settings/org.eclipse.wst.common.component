@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="cncloud_live_web">
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources/i18n"/>
+        <dependent-module archiveName="cncloud_live_model-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cncloud_live_model/cncloud_live_model">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cncloud_ks3-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cncloud_ks3/cncloud_ks3">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart-framework-4.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart-framework/smart-framework">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart-plugin-job-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart-plugin-job/smart-plugin-job">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart-plugin-dbcp-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart-plugin-dbcp/smart-plugin-dbcp">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart-plugin-rest-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart-plugin-rest/smart-plugin-rest">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="smart-plugin-i18n-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/smart-plugin-i18n/smart-plugin-i18n">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="cncloud_mam_commons-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/cncloud_mam_commons/cncloud_mam_commons">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/cncloud_live_web/target/classes"/>
+        <property name="context-root" value="cncloud_live_web"/>
+    </wb-module>
+</project-modules>

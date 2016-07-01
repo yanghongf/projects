@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.smart4j</groupId>
+        <artifactId>smart-root</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <artifactId>smart-plugin-job</artifactId>
+    <version>1.0</version>
+
+    <name>smart-plugin-job</name>
+    <description>Smart Job Plugin</description>
+    <url>http://www.smart4j.org/</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>huangyong</name>
+            <email>huangyong.java@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@git.oschina.net:huangyong/smart-plugin-job.git</connection>
+        <developerConnection>scm:git:git@git.oschina.net:huangyong/smart-plugin-job.git</developerConnection>
+        <url>git@git.oschina.net:huangyong/smart-plugin-job.git</url>
+    </scm>
+
+    <properties>
+        <junit.version>4.11</junit.version>
+        <quartz.version>2.2.1</quartz.version>
+        <smart-framework.version>4.0.1</smart-framework.version>
+    </properties>
+
+    <dependencies>
+        <!-- JUnit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- Quartz -->
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- Smart -->
+        <dependency>
+            <groupId>org.smart4j</groupId>
+            <artifactId>smart-framework</artifactId>
+            <version>${smart-framework.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
